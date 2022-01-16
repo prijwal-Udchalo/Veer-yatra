@@ -507,6 +507,13 @@ hr.white-hr{
   }
 }
 
+@media(max-width: 400px){
+  html{
+    font-size: 5px;
+  }
+}
+
 .hidden{
   display: none;
 }
+
