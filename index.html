@@ -37,10 +37,10 @@
     </section>
 
     <section class="upcoming-tours">
-      <div class="section-container">
+      <div class="section-container upcoming-tours-additional-css ">
         <div class="left-col left-col-additional-css">
           <h1>
-            Upcoming tours & <br />
+            Upcoming Tours & 
             destination
           </h1>
           <hr class="upcoming-tour-hr" />
@@ -148,7 +148,6 @@
                   Mumbai
                 </p>
                 <button class=" sm-book-btn scroll">Book-now</button>
-                <!-- <a href="#" class="btn">see more</a> -->
               </div>
             </div>
             <div class="box">
@@ -159,7 +158,6 @@
                   Mumbai
                 </p>
                 <button class=" sm-book-btn scroll">Book-now</button>
-                <!-- <a href="#" class="btn">see more</a> -->
               </div>
             </div>
           </div>
@@ -187,7 +185,6 @@
                   Mumbai
                 </p>
                 <button class=" sm-book-btn scroll">Book-now</button>
-                <!-- <a href="#" class="btn">see more</a> -->
               </div>
             </div>
             <div class="box">
@@ -198,7 +195,6 @@
                   Mumbai
                 </p>
                 <button class=" sm-book-btn scroll">Book-now</button>
-                <!-- <a href="#" class="btn">see more</a> -->
               </div>
             </div>
             <div class="box">
@@ -209,7 +205,6 @@
                   Mumbai
                 </p>
                 <button class=" sm-book-btn scroll">Book-now</button>
-                <!-- <a href="#" class="btn">see more</a> -->
               </div>
             </div>
           </div>
@@ -249,7 +244,6 @@
                   Mumbai
                 </p>
                 <button class=" sm-book-btn scroll">Book-now</button>
-                <!-- <a href="#" class="btn">see more</a> -->
               </div>
             </div>
             
@@ -278,7 +272,6 @@
                   Mumbai
                 </p>
                 <button class=" sm-book-btn scroll">Book-now</button>
-                <!-- <a href="#" class="btn">see more</a> -->
               </div>
             </div>
             
@@ -299,7 +292,7 @@
 
         <div class="slide slide3">
           
-          <div class="box">
+          <div class="box slide3-box">
             <img src="img/rajasthan.jpg" alt="" />
             <div class="content">
               <h3>Trip to</h3>
@@ -312,8 +305,6 @@
           </div>
           
         </div>
-
-
 
         <div class="slide slide3">
           <div class="box">
@@ -335,8 +326,9 @@
 
         <button class="slider__btn slider__btn--left slider__btn--left3">&larr;</button>
         <button class="slider__btn slider__btn--right slider__btn--right3">&rarr;</button>
-        <div class="dots dots3"></div>
+        
       </div>
+      <div class="dots dots3"></div>
     </section>
 
 
@@ -368,21 +360,39 @@
 
         <form action="" class="book-now" id="frmsubmit" method="post" autocomplete="off" name="google-sheet">
           <div class="inputBox">
-            <h3>where to</h3>
-            <input type="text" placeholder="place name" name="destination" required/>
+            <h3>Name</h3>
+            <input type="text" placeholder="Your name" name="name" required/>
           </div>
           <div class="inputBox">
-            <h3>how many</h3>
-            <input type="number" placeholder="number of members" name="number-of-people" required />
+            <h3>Mobile number</h3>
+            <input type="number" placeholder="Active mobile number" name="mobile-number" required />
           </div>
-          <div class="inputBox">
-            <h3>arrivals</h3>
-            <input type="date" name="date-of-arriving" required/>
+          <div class="inputBox two-entries">
+
+            <div class="first-entry">
+              <h3>Destination</h3>
+              <input type="text" placeholder="Place name" name="destination" required/>
+            </div>
+            
+            <div class="second-entry">
+              <h3>Members count</h3>
+              <input type="number" placeholder="number of members" name="number-of-people" required />
+            </div>
+
           </div>
-          <div class="inputBox">
-            <h3>leaving</h3>
-            <input type="date" name="date-of-leaving" required />
+          <div class="inputBox two-entries">
+            <div class="first-entry">
+              <h3>arrivals</h3>
+              <input type="date" name="date-of-arriving" required/>
+            </div>
+            <div class="second-entry">
+              <h3>leaving</h3>
+              <input type="date" name="date-of-leaving" required />
+            </div>
           </div>
+          <!-- <div class="inputBox">
+            
+          </div> -->
           <input type="submit" class="button-md-sz book-btn-additional-css " id="btnSubmit" value="book now" >
         </form>
       </div>
@@ -401,11 +411,10 @@
       </h1>
 
       <div class="section-container section-container-additional-css knw-more-btn-toggle">
-        <img
-          src="img/about-us-1.jpg"
-          alt="Img not found"
-          class=" knw-more-img"
-        />
+        
+        <div class="knw-more-img">
+          
+        </div>
 
         <div class="left-col">
           <h1>Upcurve</h1>
@@ -521,7 +530,7 @@
             name="message"
             required
           ></textarea> -->
-          <input type="submit" class="button-md-sz "  value="send message" >
+          <input type="submit" class="button-md-sz"  value="send message" >
         </form>
       </div>
     </section>
@@ -534,15 +543,17 @@
     
     
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwa9XUZkuJSnki8b0XapqRu_rthLU8qUCuz5AtaSDlMAPjfAwwys53pNzp7I-32Gh1V/exec'
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxzq3TiTfe8Ju2PYHtQ4oD2Dp6FCq6YPmfuRc78wcmBPeXKqbe7MwBwf43NskBMS9o/exec'
       const form = document.forms['google-sheet']
     
       form.addEventListener('submit', e => {
-        e.preventDefault()
+        e.preventDefault();
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
           .catch(error => console.error('Error!', error.message))
       })
+
+      e.target.reset();
     </script>
 
 
@@ -550,15 +561,36 @@
     
     
     <script>
-      const scriptURL1 = 'https://script.google.com/macros/s/AKfycbw3g3uGTOM_kQFKSzNlMAyjZ-tDaZHkmtB9W2Eon2PfvsgZ3h9jkpzpxiEkTQCGg58Tgw/exec'
+      const scriptURL1 = 'https://script.google.com/macros/s/AKfycbxu3u9JpKi2pAsjxqFtHWTaC-LNk0AyPZajUK5f_EKHUFU3vCEvhFjWHJGhw_J4DnrXrQ/exec'
       const form1 = document.forms['google-sheet-feedback']
     
       form1.addEventListener('submit', e => {
-        e.preventDefault()
+        e.preventDefault();
+        console.log(e);
+        console.log(e.target);
+        
         fetch(scriptURL1, { method: 'POST', body: new FormData(form1)})
           .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
           .catch(error => console.error('Error!', error.message))
+
+        e.target.reset();
+        
       })
+    </script>
+
+
+
+     <!-- ---------------- Script for feed back--------------------- -->
+    
+    
+     <script>
+      // function submitForm() {
+      //   var frm = document.getElementsByClassName('book-now');
+        
+      //   frm[0].reset(); 
+      //   frm[1].reset(); // Reset all form data
+      //   return false; // Prevent page refresh
+      // }
     </script>
 
 
