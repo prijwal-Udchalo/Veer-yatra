@@ -112,7 +112,8 @@ hr.white-hr{
 .heading{
   text-align: center;
   /* padding:2.5rem 0 */
-  margin-bottom: 3.5rem;
+  /* margin-bottom: 5rem; */
+  margin: 7rem auto;
 }
 
 .heading span{
@@ -140,7 +141,7 @@ hr.white-hr{
   justify-content: space-around;
   align-items: center;
   gap: 1.5rem;
-  margin-bottom: 3.5rem;
+  /* margin-bottom: 5rem; */
 }
 .left-col{
   width: 40%;
@@ -266,6 +267,7 @@ hr.white-hr{
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .slide {
@@ -412,6 +414,7 @@ hr.white-hr{
   padding-left: 1.5rem;
 }
 
+
 .sm-book-btn{
   background-color: #484872;
   color: #fff;
@@ -481,12 +484,15 @@ hr.white-hr{
 /* ---------------- Book now ------------------- */
 
 .book-now{
-  width: 32%;
+  width: 35%;
   padding:2rem;
   text-align: center;
   border-radius: .5rem;
   font-size: 2rem;
   box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
+}
+.book-heading{
+  margin-top: 3rem;
 }
 
 .book-now:hover{
@@ -521,6 +527,7 @@ hr.white-hr{
   text-transform: none;
 }
 
+
 .book-now .inputBox h3{
   font-size: 2rem;
   padding:1rem 0;
@@ -533,6 +540,9 @@ hr.white-hr{
   padding: 1rem 2rem;
   margin: 2rem;
 }
+.left-col ol li:last-child{
+  margin-bottom: 3rem;
+}
 
 /* ---------------About us ------------------ */
 .about-us{
@@ -541,7 +551,7 @@ hr.white-hr{
 
 .section-container-additional-css{
   flex-direction: row-reverse;
-  margin-bottom: 3rem;
+  /* margin-bottom: 8rem; */
   
 }
 
@@ -562,7 +572,10 @@ hr.white-hr{
 }
 .knw-more-img:hover{
   transform: scale(1.05);
-  transition: .5s;
+}
+
+.knw-more{
+  margin-bottom: 0;
 }
 
 
@@ -656,6 +669,10 @@ hr.white-hr{
   padding: 0 1rem;
   margin: 0 auto;
   height: 10rem;
+}
+
+.feedback-container{
+  margin-bottom: 5rem;
 }
 /* ----------------- media ------------------- */
 
