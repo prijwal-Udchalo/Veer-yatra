@@ -50,6 +50,7 @@ body{
   justify-content: flex-start;
   align-items: center;
   color: #fff;
+  margin-bottom: 3.5rem;
 }
 
 .intro-content-1-para{
@@ -110,7 +111,8 @@ hr.white-hr{
 
 .heading{
   text-align: center;
-  padding:2.5rem 0
+  /* padding:2.5rem 0 */
+  margin-bottom: 3.5rem;
 }
 
 .heading span{
@@ -133,10 +135,12 @@ hr.white-hr{
 
 .section-container{
   display: flex;
-  padding: 5rem 10rem;
+  padding: 0rem 10rem;
+  padding-bottom: 0;
   justify-content: space-around;
   align-items: center;
   gap: 1.5rem;
+  margin-bottom: 3.5rem;
 }
 .left-col{
   width: 40%;
@@ -156,6 +160,13 @@ hr.white-hr{
   font-size: 3rem;
   color: #777;
   margin-bottom: 2rem;
+  text-align: left;
+}
+.group-travel-description-list{
+  font-size: 2.5rem;
+  color: #777;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
   text-align: left;
 }
 .left-col-additional-css{
@@ -470,7 +481,7 @@ hr.white-hr{
 /* ---------------- Book now ------------------- */
 
 .book-now{
-  width: 40%;
+  width: 32%;
   padding:2rem;
   text-align: center;
   border-radius: .5rem;
@@ -494,11 +505,11 @@ hr.white-hr{
   justify-content: space-between;
 }
 .two-entries .first-entry{
-  width: 50%;
+  width: 49%;
 }
 
 .two-entries .second-entry{
-  width: 50%;
+  width: 49%;
 }
 
 .book-now .inputBox input{
@@ -697,12 +708,6 @@ hr.white-hr{
   html{
     font-size: 7px;
   }
-  .knw-more-img{
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-  }
   .box{
     max-width: 35em;
   }
@@ -723,9 +728,9 @@ hr.white-hr{
   #section--2{
     display: block;
   }
-  .section-container-additional-css{
+  /* .section-container-additional-css{
     padding-top: 0;
-  }
+  } */
 }
 
 @media(max-width: 650px){
@@ -733,6 +738,9 @@ hr.white-hr{
     padding: 5rem 5rem;
     padding-bottom: 0;
   }
+  /* .section-container-additional-css{
+    padding-top: 0;
+  } */
   .image-gallery{
     display: block;
   }
@@ -742,6 +750,11 @@ hr.white-hr{
   }
   .intro-content-2-para{
     font-size: 7rem;
+  }
+  .knw-more-img{
+    width: 45rem;
+    height: 35rem;
+    
   }
 }
 
@@ -773,5 +786,10 @@ hr.white-hr{
     max-width: 100%;
     margin: 0 auto;
     height: 100%;
+  }
+  .knw-more-img{
+    width: 43rem;
+    height: 33rem;
+    
   }
 }
