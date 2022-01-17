@@ -149,12 +149,14 @@ hr.white-hr{
   color: #484872;
   margin-bottom: 2rem;
   line-height: 6rem;
+  text-align: left;
 }
 
 .left-col p{
   font-size: 3rem;
   color: #777;
   margin-bottom: 2rem;
+  text-align: left;
 }
 .left-col-additional-css{
   width: 80%;
@@ -169,6 +171,9 @@ hr.white-hr{
   max-width: 30em;
 }
 
+.upcoming-tours-additional-css{
+  padding-bottom: 0;
+}
 
 
 /* .grid-1{
@@ -256,7 +261,6 @@ hr.white-hr{
   position: absolute;
   top: 0;
   bottom: 0;
-  margin: auto auto;
   width: 100%;
   height: 30rem;
   display: flex;
@@ -267,6 +271,19 @@ hr.white-hr{
   transition: transform 1s;
 }
 
+.slide3 {
+  /* position: absolute; */
+  /* top: 0; */
+  /* bottom: 0; */
+  /* margin: auto auto; */
+  width: 100%;
+  height: 40rem;
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 1rem; */
+  /* justify-content: space-around; */
+  transition: transform 1s;
+}
 
 .slider__btn {
   position: absolute;
@@ -275,9 +292,10 @@ hr.white-hr{
   z-index: 10;
 
   border: none;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.5);
   font-family: inherit;
-  color: #b3b3b3;
+  /* color: #b3b3b3; */
+  color: #484872;
   border-radius: 50%;
   height: 6rem;
   width: 6rem;
@@ -339,6 +357,9 @@ hr.white-hr{
   height: 30rem;
   position: relative;
   box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
+}
+.slide3-box{
+  /* height: 40rem; */
 }
 
 .box img{
@@ -465,7 +486,19 @@ hr.white-hr{
 
 .book-now .inputBox{
   padding:.5rem 0;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
+}
+
+.two-entries{
+  display: flex;
+  justify-content: space-between;
+}
+.two-entries .first-entry{
+  width: 50%;
+}
+
+.two-entries .second-entry{
+  width: 50%;
 }
 
 .book-now .inputBox input{
@@ -505,7 +538,13 @@ hr.white-hr{
 .knw-more-img{
   width: 50rem;
   height: 40rem;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.7);
+  background-image:linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.1)),
+  url(img/about-us-1.jpeg);
+  /* background-image: url(img/about-us-1.jpeg); */
+  background-position: bottom;
+  background-size: cover;
+  
 }
 .knw-more-img:hover{
   transform: scale(1.05);
@@ -604,7 +643,6 @@ hr.white-hr{
   margin: 0 auto;
   height: 10rem;
 }
-
 /* ----------------- media ------------------- */
 
 
@@ -626,6 +664,7 @@ hr.white-hr{
   .left-col{
     width: 80%;
     margin: 0 auto;
+    text-align: center;
   }
   .right-col{
     width: 100%;
@@ -648,6 +687,8 @@ hr.white-hr{
   .left-col p{
     margin-bottom: 3rem;
   }
+
+
 }
 
 @media(max-width: 750px){
@@ -684,30 +725,32 @@ hr.white-hr{
 @media(max-width: 650px){
   .section-container{
     padding: 5rem 5rem;
+    padding-bottom: 0;
   }
   .image-gallery{
     display: block;
   }
   .box{
-    margin: 1.5rem auto;
+    margin: 0 auto;
+    max-width: 40rem;
   }
   .intro-content-2-para{
     font-size: 7rem;
   }
 }
 
-@media(max-width: 500px){
+/* @media(max-width: 500px){
   .book-now{
     width: 100%;
     margin: 0 auto;
   }
-}
+} */
 
 .hidden{
   display: none;
 }
 
-@media(max-width: 400px){
+@media(max-width: 420px){
   html{
     font-size: 5px;
   }
@@ -719,5 +762,10 @@ hr.white-hr{
   }
   #section--3{
     display: block;
+  }
+  .slide img{
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
   }
 }
