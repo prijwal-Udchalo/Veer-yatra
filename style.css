@@ -633,7 +633,7 @@ hr.white-hr{
 
 .contact-us-btn{
   text-decoration: none;
-  margin-top: 3rem;
+  margin-bottom: 3rem;
   display: inline-block;
 }
 
@@ -687,7 +687,9 @@ hr.white-hr{
   .left-col p{
     margin-bottom: 3rem;
   }
-
+  .heading{
+    padding-bottom: 0;
+  }
 
 }
 
@@ -707,6 +709,7 @@ hr.white-hr{
   .book-now{
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 2rem;
   }
   .mobile-off{
     display: none;
@@ -719,6 +722,9 @@ hr.white-hr{
   }
   #section--2{
     display: block;
+  }
+  .section-container-additional-css{
+    padding-top: 0;
   }
 }
 
