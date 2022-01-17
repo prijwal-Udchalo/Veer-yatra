@@ -759,6 +759,7 @@ hr.white-hr{
 @media(max-width: 650px){
   .section-container{
     padding: 5rem 5rem;
+    padding-top: 0;
     padding-bottom: 0;
   }
   .image-gallery{
