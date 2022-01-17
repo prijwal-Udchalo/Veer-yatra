@@ -335,7 +335,7 @@
 </section>
 
     <section class="book" id="book">
-      <h1 class="heading">
+      <h1 class="heading book-heading">
         <span>b</span>
         <span>o</span>
         <span>o</span>
@@ -432,7 +432,7 @@
             Forces, Paramilitary, Ex-servicemen and their dependents.
           </p>
 
-          <button class="knw-more button-md-sz">
+          <button class="knw-more button-md-sz knw-more-additional-css">
             Know more
           </button>
 
@@ -492,7 +492,7 @@
         <span>t</span>
       </h1>
 
-      <div class="section-container">
+      <div class="section-container feedback-container">
         <div class="left-col">
           <h1>Feedback !</h1>
           <hr />
@@ -554,9 +554,12 @@
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
           .catch(error => console.error('Error!', error.message))
+
+          e.target.reset();
+
       })
 
-      e.target.reset();
+      
     </script>
 
 
