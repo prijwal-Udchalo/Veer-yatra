@@ -542,18 +542,21 @@ hr.white-hr{
 .section-container-additional-css{
   flex-direction: row-reverse;
   margin-bottom: 3rem;
-  /* padding: 10rem 15rem; */
   
 }
 
 .knw-more-img{
   width: 50rem;
   height: 40rem;
+
+  width: 30%;
+  height: 40rem;
+
   box-shadow: 0 1rem 2rem rgba(0,0,0,.7);
   background-image:linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.1)),
   url(img/about-us-1.jpeg);
   /* background-image: url(img/about-us-1.jpeg); */
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   
 }
@@ -693,6 +696,7 @@ hr.white-hr{
   .knw-more-img {
     margin: 0 auto;
     margin-bottom: 3rem;
+    width: 60%;
   }
 
   .left-col p{
@@ -716,6 +720,11 @@ hr.white-hr{
     margin: 0 auto;
     margin-bottom: 2rem;
   }
+  .knw-more-img {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 80%;
+  }
   .mobile-off{
     display: none;
   }
@@ -728,9 +737,6 @@ hr.white-hr{
   #section--2{
     display: block;
   }
-  /* .section-container-additional-css{
-    padding-top: 0;
-  } */
 }
 
 @media(max-width: 650px){
@@ -738,9 +744,6 @@ hr.white-hr{
     padding: 5rem 5rem;
     padding-bottom: 0;
   }
-  /* .section-container-additional-css{
-    padding-top: 0;
-  } */
   .image-gallery{
     display: block;
   }
@@ -751,19 +754,7 @@ hr.white-hr{
   .intro-content-2-para{
     font-size: 7rem;
   }
-  .knw-more-img{
-    width: 45rem;
-    height: 35rem;
-    
-  }
 }
-
-/* @media(max-width: 500px){
-  .book-now{
-    width: 100%;
-    margin: 0 auto;
-  }
-} */
 
 .hidden{
   display: none;
@@ -786,10 +777,5 @@ hr.white-hr{
     max-width: 100%;
     margin: 0 auto;
     height: 100%;
-  }
-  .knw-more-img{
-    width: 43rem;
-    height: 33rem;
-    
   }
 }
