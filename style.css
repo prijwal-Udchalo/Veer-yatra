@@ -43,14 +43,18 @@ body {
   background-size: cover;
   padding: 7rem 10rem;
   display: flex;
-  justify-content: space-around;
-  justify-content: flex-start;
+  justify-content: space-between;
+  /* justify-content: flex-start; */
   align-items: center;
   color: #fff;
   margin-bottom: 3.5rem;
 }
 .intro > img {
-  height: 400px;
+  height: 350px;
+}
+.intro-content-2-para > img {
+  height: 7rem;
+  margin-right: 2rem;
 }
 .intro-content-1-para {
   font-size: 2rem;
@@ -773,5 +777,9 @@ hr.white-hr {
   }
   .intro > img {
     display: none;
+  }
+  .intro-content-2-para > img {
+    height: 4rem;
+    margin-right: 2rem;
   }
 }
